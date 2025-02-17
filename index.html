@@ -1,0 +1,122 @@
+<DCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Caixas de Banana - Frescas e Deliciosas</title>
+    <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #FFD700; /*Amarelo ouro */
+  color: #3E8E41; /*Verde escuro */
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 20px;
+}
+
+section:nth-child(odd) {
+  backgroun-color: #FFFFE0; /*Amarelo claro */
+}
+
+section:nth-child(even) {
+  background-color: #F0FFF0; /*Verde claro */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  displaly: block;
+  margin: 20px auto;
+}
+
+button {
+  background-color: #3E8E41; /* Verde escuro */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:houver {
+  background-color: #2E7D32 /*Verde mais esscuro no houver */
+}
+
+footer {
+  background-color: #FFD700; /*Amarelo ouro */
+  color: #3E8E41; /*Verde escuro */
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+    </style>
+  </head>
+  <body>
+    <header style="background-color: #FFD700:: color: #3E8E41; text-align: center; padding: 20px;">
+      <h1>Caixas de Banana Frescas</h1>
+      <h2>Deliciosas e Naturais</h2>
+    </header>
+    <main>
+      <section style="background-color: #FFFFE0; padding: 20px;">
+        <h2>Por que Escolher Nossas Bananas?</h2>
+        <ul>
+          <li>100% Orgânicas</li>
+          <li>Colhidas no Ponto Certo</li>
+          <li>Entregas Direto do Sítio</li>
+        </ul>
+        <img src="httpss://via.placeholder.com/300x200?text=imagem+de+uma+Caixa+de+Banana"alt="Caixa de Banana">
+      </section>
+      <section style="background-color:#F0FFF0; padding: 20px;">
+        <h2>Como Comprar</h2>
+        <p>Escolha sua caixa de banana e faça seu pedido facilmente!</p>
+        <button style="background-color: #3E8E41; color: white; border:none"; padding: 10px 20px;">Comprar Agora</button>
+         </section>                                  </main>
+       <footer style="background-color: #FFD700; color: #3E8E41; text-align: center; padding: 10px;">
+           <p> 2023 Caixas de Banana Frescas<p/>
+        </footer>
+	<script>
+	document.querySelector('button').addEventListener('click', function() {
+  // Muda a cor de fundo do botão para uma tonalidade diferente de verde
+  this.style.backgroundColor = '#4CAF50';
+  
+  // Exibe um alerta para informar o usuário
+  alert('Obrigado pelo seu interesse! Em breve entraremos em contato.');
+  
+  // Volta à cor original após 2 segundos
+  setTimeout(()=> {
+    this.style.backgroundColor = '#3E8E41';
+  }, 2000);
+});	
+	</script>
+  </body>
+  </html>
